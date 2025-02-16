@@ -1,0 +1,16 @@
+.main {
+  margin: 0 10px 10px;
+  padding: 20px;
+  border-radius: 15px;
+  background-image: linear-gradient(to bottom, var(--green-900), transparent);
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 40px;
+}
+
+@media (max-width: 480px) {
+  .main {
+    padding: 12px 16px;
+  }
+}
