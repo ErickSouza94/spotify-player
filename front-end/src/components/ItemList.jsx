@@ -1,4 +1,3 @@
-import React from "react";
 import "./ItemList.css";
 import SingleItem from "./SingleItem";
 import { Link, useLocation } from "react-router-dom";
@@ -8,8 +7,8 @@ function ItemList({ title, items, itemsArray, path, idPath }) {
   // console.log(pathname)
 
   const isHome = pathname === "/";
-  
-  const finalItems = isHome ? items : Infinity
+
+  const finalItems = isHome ? items : Infinity;
 
   return (
     <>
@@ -31,7 +30,7 @@ function ItemList({ title, items, itemsArray, path, idPath }) {
             .filter((currentValue, index) => index < finalItems)
             .map((currentObj, index) => (
               <SingleItem
-              {...currentObj}
+                {...currentObj}
                 idPath={idPath}
                 key={`${title}-${index}`}
               />
